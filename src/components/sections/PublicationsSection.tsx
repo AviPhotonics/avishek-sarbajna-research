@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -235,7 +236,7 @@ const PublicationCard = ({ publication }: PublicationCardProps) => {
           <div className="flex items-center gap-2 md:ml-4">
             <Button size="sm" variant="outline" asChild>
               <a 
-                href={https://doi.org/${publication.doi}} 
+                href={`https://doi.org/${publication.doi}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -246,7 +247,7 @@ const PublicationCard = ({ publication }: PublicationCardProps) => {
             </Button>
             <Button size="sm" variant="outline" asChild>
               <a 
-                href={https://doi.org/${publication.doi}} 
+                href={`https://doi.org/${publication.doi}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -278,7 +279,7 @@ const FeaturedPublicationCard = ({ publication }: PublicationCardProps) => {
           <div className="flex gap-2">
             <Button size="sm" variant="outline" asChild>
               <a 
-                href={https://doi.org/${publication.doi}} 
+                href={`https://doi.org/${publication.doi}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -289,7 +290,7 @@ const FeaturedPublicationCard = ({ publication }: PublicationCardProps) => {
             </Button>
             <Button size="sm" variant="outline" asChild>
               <a 
-                href={https://doi.org/${publication.doi}} 
+                href={`https://doi.org/${publication.doi}`} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center"
