@@ -25,11 +25,11 @@ const galleryImages: GalleryImage[] = [
   // Life out of the Lab / Winter
   { id: 6, src: "/images/winter.jpg", caption: "Winter walk by the lakeside", category: "life", subcategory: "winter", alt: "Winter scene" },
   // Life out of the Lab / Team 2DPHYS
-  { id: 7, src: "/team day 1.jpg", caption: "Team 2DPHYS: Day 1 group photo", category: "life", subcategory: "team", alt: "Team day 1" },
-  { id: 8, src: "/4.jpg", caption: "Team 2DPHYS: 4th anniversary celebration", category: "life", subcategory: "team", alt: "Team 2DPHYS anniversary" },
+  { id: 7, src: "/team day 1.jpg", caption: "Team 2DPHYS: Day 1 group photo", category: "life", subcategory: "team", alt: "Team day" },
+  { id: 8, src: "/4.jpg", caption: "Team 2DPHYS: 4th anniversary celebration", category: "life", subcategory: "team", alt: "Christmas dinner 2022" },
   { id: 9, src: "/Foto 6 BBQ.jpg", caption: "Team BBQ gathering", category: "life", subcategory: "team", alt: "BBQ event" },
-  { id: 10, src: "/team.jpeg", caption: "Team portrait at conference", category: "life", subcategory: "team", alt: "Team portrait" },
-  { id: 11, src: "/christmas.dinner.jpeg", caption: "Team Christmas dinner", category: "life", subcategory: "team", alt: "Christmas dinner" },
+  { id: 10, src: "/team.jpeg", caption: "Team portrait at conference", category: "life", subcategory: "team", alt: "Doublr grant celebration" },
+  { id: 11, src: "/christmas.dinner.jpeg", caption: "Team Christmas dinner", category: "life", subcategory: "team", alt: "Christmas lunch 2024" },
   // Life out of the Lab / M.Sc. Convocation
   { id: 12, src: "/20230928-MH-01-019.jpg", caption: "M.Sc. Convocation Ceremony Photo 1", category: "life", subcategory: "convocation", alt: "Convocation photo 1" },
   { id: 13, src: "/20230928-MH-01-034.jpg", caption: "M.Sc. Convocation Ceremony Photo 2", category: "life", subcategory: "convocation", alt: "Convocation photo 2" },
