@@ -44,7 +44,7 @@ const CVSection = () => {
                 <li>
                   <div className="text-sm text-gray-500">2012 - 2016</div>
                   <div className="font-medium">Bachelor of Technology in Electrical Engineering</div>
-                  <div className="text-sm">MAKAUT (West Bengal State University), India</div>
+                  <div className="text-sm">MAKAUT (West Bengal University of Technology), India</div>
                   <div className="text-sm text-research-light-blue">Grade: 8.2</div>
                 </li>
               </ul>
