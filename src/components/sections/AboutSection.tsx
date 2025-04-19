@@ -67,7 +67,7 @@ const AboutSection = () => {
                   <div className="text-xs text-gray-500">Projects</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-research-light-blue">130+</div>
+                  <div className="text-2xl font-bold text-research-light-blue">35+</div>
                   <div className="text-xs text-gray-500">Citations</div>
                 </div>
               </div>
