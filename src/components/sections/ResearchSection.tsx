@@ -47,7 +47,7 @@ const ResearchSection = () => {
                 title="Encapsulated Void Resonators in van der Waals Heterostructures"
                 dateRange="2022 - 2023"
                 description="Demonstrated Mie-like confinement in air voids encapsulated by hBN, shifting optical resonances deep into visible spectrum."
-                role="Experimentalist"
+                role="Lead Researcher"
                 collaborators={["Prof. Søren Raza", "Dr. Daniel R. Danielsen"]}
                 funding="Laser Photonics Reviews publication"
                 image="/images/void_resonators.jpg"
@@ -64,7 +64,7 @@ const ResearchSection = () => {
                 title="Impact of Strong Coupling in Thin Excitonic Systems"
                 dateRange="2024"
                 description="Performed wavelength-resolved photocurrent and EQE measurements in ultra-thin excitonic films under cavity coupling."
-                role="Visiting Researcher"
+                role="Lead Researcher"
                 collaborators={["Prof. Mark L. Brongersma (Stanford)"]}
                 funding="Otto Mønsteds Fund"
                 image="/images/eqe.png"
