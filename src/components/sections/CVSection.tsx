@@ -25,11 +25,7 @@ const CVSection = () => {
                 <h3 className="text-xl font-semibold">Education</h3>
               </div>
               <ul className="space-y-4">
-                <li>
-                  <div className="text-sm text-gray-500">02/2024 - 06/2024</div>
-                  <div className="font-medium">Visiting Researcher</div>
-                  <div className="text-sm">Stanford University, USA</div>
-                </li>
+                
                 <li>
                   <div className="text-sm text-gray-500">Since 03/2022</div>
                   <div className="font-medium">Doctorate in Physics</div>
