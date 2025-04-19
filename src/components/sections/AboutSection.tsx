@@ -23,9 +23,11 @@ const AboutSection = () => {
               I aspire to pursue a career in research with a strong focus on nanophotonics and optoelectronics and would like to hear (or share) research stories. So please, feel free to knock.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-research-blue hover:bg-research-dark">
-                <FileDown className="mr-2 h-4 w-4" />
-                Download CV
+              <Button className="bg-research-blue hover:bg-research-dark" asChild>
+                <a href="/CV_A_Sarbajna.pdf" download>
+                  <FileDown className="mr-2 h-4 w-4" />
+                  Download CV
+                </a>
               </Button>
               <Button variant="outline" asChild>
                 <a href="#research">
