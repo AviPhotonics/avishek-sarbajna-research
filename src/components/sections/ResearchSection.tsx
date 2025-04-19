@@ -38,7 +38,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Søren Raza (DTU)", "Prof. Peter Bøggild (DTU)"]}
                 funding="DTU Physics and William Demant Foundation"
-                image="/images/ws2_voids.jpg"
+                image="/color plot.png"
                 links={[]}
                 tags={["Nanophotonics", "Dielectric Resonators", "PL Enhancement"]}
               />
@@ -50,7 +50,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Søren Raza", "Dr. Daniel R. Danielsen"]}
                 funding="Laser Photonics Reviews publication"
-                image="/images/void_resonators.jpg"
+                image="/0090 top DF.png"
                 links={[]}
                 tags={["Nanostructures", "Lossy Materials", "Field Confinement"]}
               />
@@ -67,7 +67,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Mark L. Brongersma (Stanford)"]}
                 funding="Otto Mønsteds Fund"
-                image="/images/eqe.png"
+                image="/Picture2_7.png"
                 links={[]}
                 tags={["Excitons", "Photocurrent", "Strong Coupling"]}
               />
@@ -84,7 +84,7 @@ const ResearchSection = () => {
                 role="Co-author"
                 collaborators={["Dr. Xavi Zambrana", "Prof. Søren Raza"]}
                 funding="N/A"
-                image="/images/hfs2.jpg"
+                image="/1_RI.png"
                 links={[]}
                 tags={["HfS2", "Mie Resonators", "vdW Materials"]}
               />
