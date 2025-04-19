@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import {
-  Tabs,
-  TabsList,
-  TabsTrigger,
-  TabsContent
-} from "@/components/ui/tabs";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 interface GalleryImage {
@@ -13,12 +8,12 @@ interface GalleryImage {
   src: string;
   caption: string;
   category: "conferences" | "research" | "life" | "all";
-  subcategory?: string; // e.g. "metamaterials", "supr", "hiking", "winter", "colors"
+  subcategory?: string;
   alt: string;
 }
 
 const galleryImages: GalleryImage[] = [
-  // --- Conferences / Metamaterials 2023
+  // Conferences / Metamaterials 2023
   {
     id: 1,
     src: "/images/color_plot.png",
@@ -27,7 +22,7 @@ const galleryImages: GalleryImage[] = [
     subcategory: "metamaterials",
     alt: "Metamaterials 2023"
   },
-  // --- Conferences / SUPR 2024
+  // Conferences / SUPR 2024
   {
     id: 2,
     src: "/images/Picture2_7.png",
@@ -36,7 +31,7 @@ const galleryImages: GalleryImage[] = [
     subcategory: "supr",
     alt: "SUPR 2024"
   },
-  // --- Research (lab + fieldwork)
+  // Research
   {
     id: 3,
     src: "/images/0090 top DF.png",
@@ -51,7 +46,7 @@ const galleryImages: GalleryImage[] = [
     category: "research",
     alt: "Field work"
   },
-  // --- Life out of the Lab / Hiking
+  // Life out of the Lab / Hiking
   {
     id: 5,
     src: "/images/hiking.jpg",
@@ -60,7 +55,7 @@ const galleryImages: GalleryImage[] = [
     subcategory: "hiking",
     alt: "Hiking"
   },
-  // --- Life out of the Lab / Winter
+  // Life out of the Lab / Winter
   {
     id: 6,
     src: "/images/winter.jpg",
@@ -69,7 +64,7 @@ const galleryImages: GalleryImage[] = [
     subcategory: "winter",
     alt: "Winter scene"
   },
-  // --- Life out of the Lab / Colors
+  // Life out of the Lab / Colors
   {
     id: 7,
     src: "/images/colors.jpg",
@@ -77,6 +72,31 @@ const galleryImages: GalleryImage[] = [
     category: "life",
     subcategory: "colors",
     alt: "Colorful leaves"
+  },
+  // Life out of the Lab / M.Sc. Convocation
+  {
+    id: 8,
+    src: "/20230928-MH-01-019.jpg",
+    caption: "M.Sc. Convocation Ceremony Photo 1",
+    category: "life",
+    subcategory: "convocation",
+    alt: "Convocation photo 1"
+  },
+  {
+    id: 9,
+    src: "/20230928-MH-01-034.jpg",
+    caption: "M.Sc. Convocation Ceremony Photo 2",
+    category: "life",
+    subcategory: "convocation",
+    alt: "Convocation photo 2"
+  },
+  {
+    id: 10,
+    src: "/KIT.jpg",
+    caption: "M.Sc. Convocation at KIT",
+    category: "life",
+    subcategory: "convocation",
+    alt: "KIT Convocation"
   }
 ];
 
@@ -100,7 +120,6 @@ const GallerySection = () => {
     setSelectedImage(galleryImages[newIdx]);
   };
 
-  // filter helper
   const renderGrid = (filterFn: (img: GalleryImage) => boolean) => (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
       {galleryImages.filter(filterFn).map((img) => (
@@ -117,7 +136,6 @@ const GallerySection = () => {
           Browse by category and subcategory.
         </p>
 
-        {/* Top‐level tabs */}
         <Tabs defaultValue="all" className="w-full">
           <TabsList className="flex flex-wrap justify-center gap-2 mb-8">
             <TabsTrigger value="all">All</TabsTrigger>
@@ -126,10 +144,8 @@ const GallerySection = () => {
             <TabsTrigger value="life">Life out of the Lab</TabsTrigger>
           </TabsList>
 
-          {/* All */}
-          <TabsContent value="all">{renderGrid(() => true)}</TabsContent>
+          <TabsContent value="all"> {renderGrid(() => true)} </TabsContent>
 
-          {/* Conferences with nested sub‐tabs */}
           <TabsContent value="conferences">
             <Tabs defaultValue="metamaterials" className="w-full mb-6">
               <TabsList className="flex justify-center gap-2">
@@ -145,18 +161,15 @@ const GallerySection = () => {
             </Tabs>
           </TabsContent>
 
-          {/* Research: show anything tagged research */}
-          <TabsContent value="research">
-            {renderGrid((img) => img.category === "research")}
-          </TabsContent>
+          <TabsContent value="research"> {renderGrid((img) => img.category === "research")} </TabsContent>
 
-          {/* Life out of the Lab with nested sub‐tabs */}
           <TabsContent value="life">
             <Tabs defaultValue="hiking" className="w-full mb-6">
               <TabsList className="flex justify-center gap-2">
                 <TabsTrigger value="hiking">Hiking</TabsTrigger>
                 <TabsTrigger value="winter">Winter</TabsTrigger>
                 <TabsTrigger value="colors">Colors</TabsTrigger>
+                <TabsTrigger value="convocation">M.Sc. Convocation</TabsTrigger>
               </TabsList>
               <TabsContent value="hiking">
                 {renderGrid((img) => img.category === "life" && img.subcategory === "hiking")}
@@ -167,11 +180,13 @@ const GallerySection = () => {
               <TabsContent value="colors">
                 {renderGrid((img) => img.category === "life" && img.subcategory === "colors")}
               </TabsContent>
+              <TabsContent value="convocation">
+                {renderGrid((img) => img.category === "life" && img.subcategory === "convocation")}
+              </TabsContent>
             </Tabs>
           </TabsContent>
         </Tabs>
 
-        {/* Lightbox */}
         <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
           <DialogContent className="max-w-4xl p-0 bg-transparent border-none shadow-none">
             {selectedImage && (
@@ -199,9 +214,7 @@ const GallerySection = () => {
                 >
                   <ChevronRight size={24} />
                 </button>
-                <div className="bg-black/80 text-white p-4 text-sm">
-                  {selectedImage.caption}
-                </div>
+                <div className="bg-black/80 text-white p-4 text-sm">{selectedImage.caption}</div>
               </div>
             )}
           </DialogContent>
