@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { FileDown, ArrowDown } from "lucide-react";
 
@@ -9,20 +8,19 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div className="space-y-6 animate-fade-in">
             <h1 className="font-serif text-5xl font-bold text-research-blue">
-              Dr. Jane Researcher
+              Avishek Sarbajna
             </h1>
             <h2 className="text-xl text-research-light-blue">
-              Associate Professor of Quantum Materials Science
+              PhD Researcher in Nanophotonics
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              I am a researcher specializing in quantum materials science with a focus on topological insulators 
-              and their applications in quantum computing. Currently, I serve as an Associate Professor at 
-              Stanford University's Department of Physics.
+              I am a researcher currently pursuing my PhD. My doctoral research is centred on nanoscale light-matter interaction in high refractive index excitonic systems, particularly Transition Metal Dichalcogenides (TMDC).
             </p>
             <p className="text-gray-700 leading-relaxed">
-              My research combines theoretical modeling and experimental approaches to discover novel quantum 
-              phenomena in condensed matter systems. I lead the Quantum Materials Lab where we develop new 
-              materials for next-generation quantum technologies.
+              My expertise spans various facets of nanotechnology, with a focus on nanofabrication techniques such as e-beam lithography and reactive ion etching. Proficient in handling 2D materials through techniques like exfoliation and stacking, I specialize in utilizing dark-field spectroscopy, photocurrent measurements, and topographical characterization tools such as AFM and SEM.
+            </p>
+            <p className="text-gray-700 leading-relaxed">
+              I aspire to pursue a career in research with a strong focus on nanophotonics and optoelectronics and would like to hear (or share) research stories. So please, feel free to knock.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-research-blue hover:bg-research-dark">
