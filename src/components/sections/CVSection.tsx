@@ -92,36 +92,47 @@ const CVSection = () => {
 
   
           {/* Awards & Honors */}
-          <Card className="hover-lift">
-            <CardContent className="pt-6">
-              <div className="flex items-center mb-4">
-                <Award className="text-research-light-blue mr-3" />
-                <h3 className="text-xl font-semibold">Awards & Honors</h3>
-              </div>
-              <ul className="space-y-4">
-                <li>
-                  <div className="text-sm text-gray-500">2023</div>
-                  <div className="font-medium">Presidential Early Career Award</div>
-                  <div className="text-sm">National Science Foundation</div>
-                </li>
-                <li>
-                  <div className="text-sm text-gray-500">2021</div>
-                  <div className="font-medium">Young Investigator Grant</div>
-                  <div className="text-sm">Department of Energy</div>
-                </li>
-                <li>
-                  <div className="text-sm text-gray-500">2018</div>
-                  <div className="font-medium">Outstanding Researcher Award</div>
-                  <div className="text-sm">American Physical Society</div>
-                </li>
-                <li>
-                  <div className="text-sm text-gray-500">2016</div>
-                  <div className="font-medium">Innovation in Teaching Award</div>
-                  <div className="text-sm">Stanford University</div>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
+<Card className="hover-lift">
+  <CardContent className="pt-6">
+    <div className="flex items-center mb-4">
+      <Award className="text-research-light-blue mr-3" />
+      <h3 className="text-xl font-semibold">Awards & Honors</h3>
+    </div>
+    <ul className="space-y-4">
+
+      <li>
+        <div className="text-sm text-gray-500">2024</div>
+        <div className="font-medium">Otto Mønsteds Fond Grant</div>
+        <div className="text-sm">For research stay at Stanford University</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2024</div>
+        <div className="font-medium">William Demant Foundation Grant</div>
+        <div className="text-sm">Support for international research mobility</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2024</div>
+        <div className="font-medium">Best Poster Award</div>
+        <div className="text-sm">Stanford University Photonics Retreat (SUPR)</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2012–2016</div>
+        <div className="font-medium">Merit-Cum-Means Scholarship</div>
+        <div className="text-sm">Government of West Bengal, India</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2012</div>
+        <div className="font-medium">Top 3% in WBJEE Entrance Exam</div>
+        <div className="text-sm">Ranked 3558 out of ~120,000 students</div>
+      </li>
+
+    </ul>
+  </CardContent>
+</Card>
         </div>
       </div>
     </section>
