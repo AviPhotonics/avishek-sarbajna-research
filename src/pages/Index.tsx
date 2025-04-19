@@ -11,6 +11,7 @@ import ResourcesSection from '@/components/sections/ResourcesSection';
 import NewsSection from '@/components/sections/NewsSection';
 import TalksSection from '@/components/sections/TalksSection';
 import ContactSection from '@/components/sections/ContactSection';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 const Index = () => {
   return (
