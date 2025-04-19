@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { TooltipProvider } from '@/components/ui/tooltip';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import AboutSection from '@/components/sections/AboutSection';
@@ -11,27 +12,28 @@ import ResourcesSection from '@/components/sections/ResourcesSection';
 import NewsSection from '@/components/sections/NewsSection';
 import TalksSection from '@/components/sections/TalksSection';
 import ContactSection from '@/components/sections/ContactSection';
-import { TooltipProvider } from '@/components/ui/tooltip';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      
-      <main>
-        <AboutSection />
-        <CVSection />
-        <ResearchSection />
-        <PublicationsSection />
-        <GallerySection />
-        <ResourcesSection />
-        <NewsSection />
-        <TalksSection />
-        <ContactSection />
-      </main>
-      
-      <Footer />
-    </div>
+    <TooltipProvider>
+      <div className="min-h-screen">
+        <Navbar />
+        
+        <main>
+          <AboutSection />
+          <CVSection />
+          <ResearchSection />
+          <PublicationsSection />
+          <GallerySection />
+          <ResourcesSection />
+          <NewsSection />
+          <TalksSection />
+          <ContactSection />
+        </main>
+        
+        <Footer />
+      </div>
+    </TooltipProvider>
   );
 };
 
