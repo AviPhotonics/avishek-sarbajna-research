@@ -29,7 +29,7 @@
     <div className="flex">
       <MapPin className="h-5 w-5 text-research-light-blue mr-3 mt-0.5" />
       <div>
-        <h4 className="font-medium">Address</h4>
+        <h4 className="font-medium">Office</h4>
         <p className="text-gray-600">
           Rolf Krakes Alle 5<br />
           2860 Søborg, Denmark
