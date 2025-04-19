@@ -47,7 +47,7 @@ const CVSection = () => {
             </CardContent>
           </Card>
 
-        {/* Research Experience */}
+{/* Research Experience */}
 <Card className="hover-lift">
   <CardContent className="pt-6">
     <div className="flex items-center mb-4">
@@ -57,32 +57,32 @@ const CVSection = () => {
     <ul className="space-y-4">
 
       <li>
-        <div className="text-sm text-gray-500">2022 – Present</div>
+        <div className="text-sm text-gray-500">Mar 2022 – Present</div>
         <div className="font-medium">PhD Researcher</div>
         <div className="text-sm">Applied Nano-Optics Group, Technical University of Denmark</div>
       </li>
 
       <li>
-        <div className="text-sm text-gray-500">Feb – Jun 2024</div>
+        <div className="text-sm text-gray-500">Feb 2024 – Jun 2024</div>
         <div className="font-medium">Visiting Researcher</div>
         <div className="text-sm">Geballe Laboratory for Advanced Materials, Stanford University</div>
       </li>
 
       <li>
-        <div className="text-sm text-gray-500">2020 – 2022</div>
+        <div className="text-sm text-gray-500">Nov 2020 – Feb 2022</div>
         <div className="font-medium">Research Assistant / Intern</div>
         <div className="text-sm">Light Technology Institute, Karlsruhe Institute of Technology</div>
       </li>
 
       <li>
-        <div className="text-sm text-gray-500">2020 – 2021</div>
+        <div className="text-sm text-gray-500">Feb 2020 – Apr 2021</div>
         <div className="font-medium">Research Assistant</div>
-        <div className="text-sm">Institut für Funktionelle Grenzflächen, KIT</div>
+        <div className="text-sm">Institut für Funktionelle Grenzflächen, Karlsruhe Institute of Technology</div>
       </li>
 
       <li>
         <div className="text-sm text-gray-500">Oct 2016 – Sep 2019</div>
-        <div className="font-medium">Developer</div>
+        <div className="font-medium">Software Developer</div>
         <div className="text-sm">Tata Consultancy Services, India</div>
       </li>
 
