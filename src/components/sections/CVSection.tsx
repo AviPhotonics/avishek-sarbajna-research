@@ -50,34 +50,51 @@ const CVSection = () => {
               </ul>
             </CardContent>
           </Card>
-          
-          {/* Professional Experience */}
-          <Card className="hover-lift">
-            <CardContent className="pt-6">
-              <div className="flex items-center mb-4">
-                <Briefcase className="text-research-light-blue mr-3" />
-                <h3 className="text-xl font-semibold">Experience</h3>
-              </div>
-              <ul className="space-y-4">
-                <li>
-                  <div className="text-sm text-gray-500">2020 - Present</div>
-                  <div className="font-medium">Associate Professor</div>
-                  <div className="text-sm">Department of Physics, Stanford University</div>
-                </li>
-                <li>
-                  <div className="text-sm text-gray-500">2014 - 2020</div>
-                  <div className="font-medium">Assistant Professor</div>
-                  <div className="text-sm">Department of Physics, Stanford University</div>
-                </li>
-                <li>
-                  <div className="text-sm text-gray-500">2012 - 2014</div>
-                  <div className="font-medium">Research Fellow</div>
-                  <div className="text-sm">Quantum Materials Institute, ETH Zürich</div>
-                </li>
-              </ul>
-            </CardContent>
-          </Card>
-          
+
+        {/* Research Experience */}
+<Card className="hover-lift">
+  <CardContent className="pt-6">
+    <div className="flex items-center mb-4">
+      <Briefcase className="text-research-light-blue mr-3" />
+      <h3 className="text-xl font-semibold">Research Experience</h3>
+    </div>
+    <ul className="space-y-4">
+
+      <li>
+        <div className="text-sm text-gray-500">2022 – Present</div>
+        <div className="font-medium">PhD Researcher</div>
+        <div className="text-sm">Applied Nano-Optics Group, Technical University of Denmark</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">Feb – Jun 2024</div>
+        <div className="font-medium">Visiting Researcher</div>
+        <div className="text-sm">Geballe Laboratory for Advanced Materials, Stanford University</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2020 – 2022</div>
+        <div className="font-medium">Research Assistant / Intern</div>
+        <div className="text-sm">Light Technology Institute, Karlsruhe Institute of Technology</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">2020 – 2021</div>
+        <div className="font-medium">Research Assistant</div>
+        <div className="text-sm">Institut für Funktionelle Grenzflächen, KIT</div>
+      </li>
+
+      <li>
+        <div className="text-sm text-gray-500">Oct 2016 – Sep 2019</div>
+        <div className="font-medium">Developer</div>
+        <div className="text-sm">Tata Consultancy Services, India</div>
+      </li>
+
+    </ul>
+  </CardContent>
+</Card>
+
+  
           {/* Awards & Honors */}
           <Card className="hover-lift">
             <CardContent className="pt-6">
