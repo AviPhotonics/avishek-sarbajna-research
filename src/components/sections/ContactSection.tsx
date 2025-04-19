@@ -115,8 +115,8 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-medium">Office</h4>
                       <p className="text-gray-600">
-                        Rolf Krakes Alle 5<br />
-                        2860 Søborg, Denmark
+                        Fysikvej, 309 5<br />
+                        2800 Lyngby, Denmark
                       </p>
                     </div>
                   </div>
