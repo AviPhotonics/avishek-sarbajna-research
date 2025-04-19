@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileDown, GraduationCap, Briefcase, Award } from "lucide-react";
@@ -9,9 +8,11 @@ const CVSection = () => {
       <div className="section-container">
         <h2 className="section-title text-center">Curriculum Vitae</h2>
         <div className="flex justify-center mb-8">
-          <Button className="bg-research-blue hover:bg-research-dark">
-            <FileDown className="mr-2 h-4 w-4" />
-            Download Full CV
+          <Button className="bg-research-blue hover:bg-research-dark" asChild>
+            <a href="/CV_A_Sarbajna.pdf" download>
+              <FileDown className="mr-2 h-4 w-4" />
+              Download Full CV
+            </a>
           </Button>
         </div>
         
@@ -25,19 +26,26 @@ const CVSection = () => {
               </div>
               <ul className="space-y-4">
                 <li>
-                  <div className="text-sm text-gray-500">2010 - 2014</div>
-                  <div className="font-medium">Ph.D. in Quantum Physics</div>
-                  <div className="text-sm">Massachusetts Institute of Technology</div>
+                  <div className="text-sm text-gray-500">02/2024 - 06/2024</div>
+                  <div className="font-medium">Visiting Researcher</div>
+                  <div className="text-sm">Stanford University, USA</div>
                 </li>
                 <li>
-                  <div className="text-sm text-gray-500">2008 - 2010</div>
-                  <div className="font-medium">M.Sc. in Physics</div>
-                  <div className="text-sm">California Institute of Technology</div>
+                  <div className="text-sm text-gray-500">Since 03/2022</div>
+                  <div className="font-medium">Doctorate in Physics</div>
+                  <div className="text-sm">Danmarks Tekniske Universitet, Denmark</div>
                 </li>
                 <li>
-                  <div className="text-sm text-gray-500">2004 - 2008</div>
-                  <div className="font-medium">B.Sc. in Physics (Honors)</div>
-                  <div className="text-sm">Stanford University</div>
+                  <div className="text-sm text-gray-500">2019 - 2021</div>
+                  <div className="font-medium">Master of Science in Optics and Photonics</div>
+                  <div className="text-sm">Karlsruher Institut für Technologie, Germany</div>
+                  <div className="text-sm text-research-light-blue">Grade: 1.8</div>
+                </li>
+                <li>
+                  <div className="text-sm text-gray-500">2012 - 2016</div>
+                  <div className="font-medium">Bachelor of Technology in Electrical Engineering</div>
+                  <div className="text-sm">MAKAUT (West Bengal State University), India</div>
+                  <div className="text-sm text-research-light-blue">Grade: 8.2</div>
                 </li>
               </ul>
             </CardContent>
