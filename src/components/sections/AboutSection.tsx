@@ -11,16 +11,23 @@ const AboutSection = () => {
               Avishek Sarbajna
             </h1>
             <h2 className="text-xl text-research-light-blue">
-              PhD Researcher in Nanophotonics
-            </h2>
-            <p className="text-gray-700 leading-relaxed">
-              I am a researcher currently pursuing my PhD. My doctoral research is centred on nanoscale light-matter interaction in high refractive index excitonic systems, particularly Transition Metal Dichalcogenides (TMDC).
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              My expertise spans various facets of nanotechnology, with a focus on nanofabrication techniques such as e-beam lithography and reactive ion etching. Proficient in handling 2D materials through techniques like exfoliation and stacking, I specialize in utilizing dark-field spectroscopy, photocurrent measurements, and topographical characterization tools such as AFM and SEM.
-            </p>
-            <p className="text-gray-700 leading-relaxed">
-              I aspire to pursue a career in research with a strong focus on nanophotonics and optoelectronics and would like to hear (or share) research stories. So please, feel free to knock.
+  PhD Researcher in Nanophotonics & 2D Materials
+</h2>
+<p className="text-gray-700 leading-relaxed">
+  I am currently pursuing my PhD in Physics at the Technical University of Denmark (DTU), where my research focuses on light–matter interaction in excitonic layered materials, especially monolayer TMDCs integrated with nanoscale optical resonators. My work combines experimental nanophotonics, device fabrication, and optical spectroscopy.
+</p>
+<p className="text-gray-700 leading-relaxed">
+  My doctoral projects include the development of void resonators for highly directional photoluminescence enhancement and exploring the impact of strong coupling in ultra-thin, lossy excitonic systems. I was a visiting researcher at Stanford University, where I worked on wavelength-resolved photocurrent measurements to study light–matter coupling in optoelectronic devices.
+</p>
+<p className="text-gray-700 leading-relaxed">
+  My technical skillset spans a broad spectrum of nanofabrication and characterization techniques including electron-beam lithography, reactive ion etching (RIE), exfoliation, and van der Waals heterostructure assembly. I routinely perform bright-field and dark-field optical spectroscopy, photoluminescence mapping, photocurrent and Hall measurements, and topographical characterization using AFM, SEM, and profilometry. I also have experience with cryostat-based measurements and optical setups such as HBT interferometry.
+</p>
+<p className="text-gray-700 leading-relaxed">
+  In addition to experimental work, I use COMSOL Multiphysics for simulation and MATLAB for data processing and visualization. I have worked extensively with novel materials like HfS₂ for Mie-resonant nanophotonics and printed thermoelectric devices, both in academic research and industrial collaboration.
+</p>
+<p className="text-gray-700 leading-relaxed">
+  I’m passionate about bridging fundamental research with real-world applications in nanophotonics, optoelectronics, and 2D materials. I'm always open to collaborative opportunities and sharing research ideas—please feel free to reach out!
+
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="bg-research-blue hover:bg-research-dark" asChild>
