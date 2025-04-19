@@ -10,7 +10,7 @@ import PublicationsSection from '@/components/sections/PublicationsSection';
 import GallerySection from '@/components/sections/GallerySection';
 import ResourcesSection from '@/components/sections/ResourcesSection';
 import NewsSection from '@/components/sections/NewsSection';
-{/*import TalksSection from '@/components/sections/TalksSection';*/}
+//import TalksSection from '@/components/sections/TalksSection';
 import ContactSection from '@/components/sections/ContactSection';
 
 const Index = () => {
