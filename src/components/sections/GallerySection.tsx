@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -14,16 +15,16 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   // Conferences / Metamaterials 2023
-  { id: 1, src: "/images/color_plot.png", caption: "Metamaterials talk, Crete 2023", category: "conferences", subcategory: "metamaterials", alt: "Metamaterials 2023" },
+  { id: 1, src: "/color plot.png", caption: "Metamaterials talk, Crete 2023", category: "conferences", subcategory: "metamaterials", alt: "Metamaterials 2023" },
   // Conferences / SUPR 2024
-  { id: 2, src: "/images/Picture2_7.png", caption: "SUPR poster session, Stanford 2024", category: "conferences", subcategory: "supr", alt: "SUPR 2024" },
+  { id: 2, src: "/Picture2_7.png", caption: "SUPR poster session, Stanford 2024", category: "conferences", subcategory: "supr", alt: "SUPR 2024" },
   // Research
-  { id: 3, src: "/images/0090 top DF.png", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
-  { id: 4, src: "/images/1_RI.png", caption: "Field measurement setup", category: "research", alt: "Field work" },
+  { id: 3, src: "/0090 top DF.png", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
+  { id: 4, src: "/1_RI.png", caption: "Field measurement setup", category: "research", alt: "Field work" },
   // Life out of the Lab / Hiking
-  { id: 5, src: "/images/hiking.jpg", caption: "Weekend hike near Lyngby", category: "life", subcategory: "hiking", alt: "Hiking" },
+  { id: 5, src: "/hiking.jpg", caption: "Weekend hike near Lyngby", category: "life", subcategory: "hiking", alt: "Hiking" },
   // Life out of the Lab / Winter
-  { id: 6, src: "/images/winter.jpg", caption: "Winter walk by the lakeside", category: "life", subcategory: "winter", alt: "Winter scene" },
+  { id: 6, src: "/winter.jpg", caption: "Winter walk by the lakeside", category: "life", subcategory: "winter", alt: "Winter scene" },
   // Life out of the Lab / Team 2DPHYS
   { id: 7, src: "/team day 1.jpg", caption: "Team ANO: Team day", category: "life", subcategory: "team", alt: "Team day" },
   { id: 8, src: "/4.jpg", caption: "Christmas dinner 2022", category: "life", subcategory: "team", alt: "Christmas dinner 2022" },
