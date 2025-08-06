@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,12 +18,8 @@ const galleryImages: GalleryImage[] = [
   // Conferences / SUPR 2024
   { id: 2, src: "/Picture2_7.png", caption: "SUPR poster session, Stanford 2024", category: "conferences", subcategory: "supr", alt: "SUPR 2024" },
   // Research
-  { id: 3, src: "/0090 top DF.png", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
+  { id: 3, src: "/0090 top DF.jpg", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
   { id: 4, src: "/1_RI.png", caption: "Field measurement setup", category: "research", alt: "Field work" },
-  // Life out of the Lab / Hiking
-  { id: 5, src: "/hiking.jpg", caption: "Weekend hike near Lyngby", category: "life", subcategory: "hiking", alt: "Hiking" },
-  // Life out of the Lab / Winter
-  { id: 6, src: "/winter.jpg", caption: "Winter walk by the lakeside", category: "life", subcategory: "winter", alt: "Winter scene" },
   // Life out of the Lab / Team 2DPHYS
   { id: 7, src: "/team day 1.jpg", caption: "Team ANO: Team day", category: "life", subcategory: "team", alt: "Team day" },
   { id: 8, src: "/4.jpg", caption: "Christmas dinner 2022", category: "life", subcategory: "team", alt: "Christmas dinner 2022" },
@@ -77,8 +72,8 @@ const GallerySection = () => {
           <TabsContent value="conferences">
             <Tabs defaultValue="metamaterials" className="w-full mb-6">
               <TabsList className="flex justify-center gap-2">
-                <TabsTrigger value="metamaterials">Metamaterials 2023</TabsTrigger>
-                <TabsTrigger value="supr">SUPR 2024</TabsTrigger>
+                <TabsTrigger value="metamaterials">Metamaterials 2023</TabsTrigger>
+                <TabsTrigger value="supr">SUPR 2024</TabsTrigger>
               </TabsList>
               <TabsContent value="metamaterials">{renderGrid((img) => img.category === "conferences" && img.subcategory === "metamaterials")}</TabsContent>
               <TabsContent value="supr">{renderGrid((img) => img.category === "conferences" && img.subcategory === "supr")}</TabsContent>
@@ -88,15 +83,11 @@ const GallerySection = () => {
           <TabsContent value="research">{renderGrid((img) => img.category === "research")}</TabsContent>
 
           <TabsContent value="life">
-            <Tabs defaultValue="hiking" className="w-full mb-6">
+            <Tabs defaultValue="team" className="w-full mb-6">
               <TabsList className="flex justify-center gap-2">
-                <TabsTrigger value="hiking">Hiking</TabsTrigger>
-                <TabsTrigger value="winter">Winter</TabsTrigger>
-                <TabsTrigger value="team">Team 2DPHYS</TabsTrigger>
-                <TabsTrigger value="convocation">M.Sc. Convocation</TabsTrigger>
+                <TabsTrigger value="team">Team 2DPHYS</TabsTrigger>
+                <TabsTrigger value="convocation">M.Sc. Convocation</TabsTrigger>
               </TabsList>
-              <TabsContent value="hiking">{renderGrid((img) => img.category === "life" && img.subcategory === "hiking")}</TabsContent>
-              <TabsContent value="winter">{renderGrid((img) => img.category === "life" && img.subcategory === "winter")}</TabsContent>
               <TabsContent value="team">{renderGrid((img) => img.category === "life" && img.subcategory === "team")}</TabsContent>
               <TabsContent value="convocation">{renderGrid((img) => img.category === "life" && img.subcategory === "convocation")}</TabsContent>
             </Tabs>
