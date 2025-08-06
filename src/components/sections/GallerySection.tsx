@@ -14,16 +14,16 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   // Conferences / Metamaterials 2023
-  { id: 1, src: "/color plot.png", caption: "Metamaterials talk, Crete 2023", category: "conferences", subcategory: "metamaterials", alt: "Metamaterials 2023" },
+  { id: 1, src: "/color%20plot.png", caption: "Metamaterials talk, Crete 2023", category: "conferences", subcategory: "metamaterials", alt: "Metamaterials 2023" },
   // Conferences / SUPR 2024
   { id: 2, src: "/Picture2_7.png", caption: "SUPR poster session, Stanford 2024", category: "conferences", subcategory: "supr", alt: "SUPR 2024" },
   // Research
-  { id: 3, src: "/0090 top DF.jpg", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
+  { id: 3, src: "/0090%20top%20DF.jpg", caption: "Cleanroom nanofabrication", category: "research", alt: "Lab work" },
   { id: 4, src: "/1_RI.png", caption: "Field measurement setup", category: "research", alt: "Field work" },
   // Life out of the Lab / Team 2DPHYS
-  { id: 7, src: "/team day 1.jpg", caption: "Team ANO: Team day", category: "life", subcategory: "team", alt: "Team day" },
+  { id: 7, src: "/team%20day%201.jpg", caption: "Team ANO: Team day", category: "life", subcategory: "team", alt: "Team day" },
   { id: 8, src: "/4.jpg", caption: "Christmas dinner 2022", category: "life", subcategory: "team", alt: "Christmas dinner 2022" },
-  { id: 9, src: "/Foto 6 BBQ.jpg", caption: "BBQ event", category: "life", subcategory: "team", alt: "BBQ event" },
+  { id: 9, src: "/Foto%206%20BBQ.jpg", caption: "BBQ event", category: "life", subcategory: "team", alt: "BBQ event" },
   { id: 10, src: "/team.jpeg", caption: "Double grant celebration", category: "life", subcategory: "team", alt: "Double grant celebration" },
   { id: 11, src: "/christmas.dinner.jpeg", caption: "Christmas lunch 2024", category: "life", subcategory: "team", alt: "Christmas lunch 2024" },
   // Life out of the Lab / M.Sc. Convocation
