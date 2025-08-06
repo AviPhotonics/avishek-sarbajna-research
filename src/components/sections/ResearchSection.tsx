@@ -119,12 +119,16 @@ const ResearchCard = ({
 }) => {
   return (
     <Card className="overflow-hidden hover-lift">
-      <div className="h-48 overflow-hidden">
+      <div className="h-48 overflow-hidden border-2 border-red-500">
         <img 
           src={image} 
           alt={title} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-          onLoad={() => console.log(`✅ Image loaded successfully: ${image}`)}
+          className="w-full h-full object-cover transition-transform duration-500 hover:scale-110 border-2 border-blue-500"
+          onLoad={(e) => {
+            console.log(`✅ Image loaded successfully: ${image}`);
+            console.log(`Image dimensions: ${e.currentTarget.naturalWidth}x${e.currentTarget.naturalHeight}`);
+            console.log(`Display dimensions: ${e.currentTarget.width}x${e.currentTarget.height}`);
+          }}
           onError={(e) => {
             console.error(`❌ Failed to load image: ${image}`);
             console.error('Error details:', e);

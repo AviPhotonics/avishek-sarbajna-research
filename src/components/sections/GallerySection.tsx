@@ -113,13 +113,17 @@ const GallerySection = () => {
 };
 
 const GalleryItem = ({ image, onClick }: { image: GalleryImage; onClick: () => void }) => (
-  <div className="group relative overflow-hidden rounded-lg cursor-pointer hover-lift" onClick={onClick}>
-    <div className="aspect-[4/3] overflow-hidden">
+  <div className="group relative overflow-hidden rounded-lg cursor-pointer hover-lift border-2 border-green-500" onClick={onClick}>
+    <div className="aspect-[4/3] overflow-hidden border-2 border-yellow-500">
       <img 
         src={image.src} 
         alt={image.alt} 
-        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-        onLoad={() => console.log(`✅ Gallery image loaded: ${image.src}`)}
+        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105 border-2 border-purple-500"
+        onLoad={(e) => {
+          console.log(`✅ Gallery image loaded: ${image.src}`);
+          console.log(`Gallery image dimensions: ${e.currentTarget.naturalWidth}x${e.currentTarget.naturalHeight}`);
+          console.log(`Gallery display dimensions: ${e.currentTarget.width}x${e.currentTarget.height}`);
+        }}
         onError={(e) => {
           console.error(`❌ Failed to load gallery image: ${image.src}`);
           console.error('Error details:', e);
