@@ -12,7 +12,7 @@ const AboutSection = () => {
               Avishek Sarbajna
             </h1>
             <h2 className="text-xl text-research-light-blue">
-              PhD Researcher in Nanophotonics & 2D Materials
+              Postdoc at NanoPhoton – Center for Nanophotonics, Technical University Of Denmark
             </h2>
             <p className="text-gray-700 leading-relaxed">
               I am currently pursuing my PhD in Physics at the Technical University of Denmark (DTU), where my research focuses on light–matter interaction in excitonic layered materials, especially monolayer TMDCs integrated with nanoscale optical resonators. My work combines experimental nanophotonics, device fabrication, and optical spectroscopy.
