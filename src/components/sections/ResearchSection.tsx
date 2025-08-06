@@ -124,6 +124,11 @@ const ResearchCard = ({
           src={image} 
           alt={title} 
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+          onLoad={() => console.log(`✅ Image loaded successfully: ${image}`)}
+          onError={(e) => {
+            console.error(`❌ Failed to load image: ${image}`);
+            console.error('Error details:', e);
+          }}
         />
       </div>
       <CardHeader>

@@ -115,7 +115,16 @@ const GallerySection = () => {
 const GalleryItem = ({ image, onClick }: { image: GalleryImage; onClick: () => void }) => (
   <div className="group relative overflow-hidden rounded-lg cursor-pointer hover-lift" onClick={onClick}>
     <div className="aspect-[4/3] overflow-hidden">
-      <img src={image.src} alt={image.alt} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+      <img 
+        src={image.src} 
+        alt={image.alt} 
+        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+        onLoad={() => console.log(`✅ Gallery image loaded: ${image.src}`)}
+        onError={(e) => {
+          console.error(`❌ Failed to load gallery image: ${image.src}`);
+          console.error('Error details:', e);
+        }}
+      />
     </div>
     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity p-4 flex flex-col justify-end">
       <p className="text-white text-sm">{image.caption}</p>
