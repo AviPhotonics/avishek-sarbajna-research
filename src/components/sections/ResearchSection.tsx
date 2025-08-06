@@ -61,7 +61,7 @@ const ResearchSection = () => {
           <TabsContent value="excitonics" className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <ResearchCard 
-                title="Impact of Strong Coupling in Thin Excitonic Systems"
+                title="Apparent Resonance Splitting in Self-Coupled Excitonic Systems"
                 dateRange="2024"
                 description="Performed wavelength-resolved photocurrent and EQE measurements in ultra-thin excitonic films under cavity coupling."
                 role="Lead Researcher"
