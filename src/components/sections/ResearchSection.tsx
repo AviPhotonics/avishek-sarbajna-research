@@ -38,7 +38,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Søren Raza (DTU)", "Prof. Peter Bøggild (DTU)"]}
                 funding="DTU Physics and William Demant Foundation"
-                image="/color plot.png"
+                image="/color%20plot.png"
                 links={[]}
                 tags={["Nanophotonics", "Dielectric Resonators", "PL Enhancement"]}
               />
@@ -50,7 +50,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Søren Raza", "Dr. Daniel R. Danielsen"]}
                 funding="Laser Photonics Reviews publication"
-                image="/0090 top DF.jpg"
+                image="/0090%20top%20DF.jpg"
                 links={[]}
                 tags={["Nanostructures", "Lossy Materials", "Field Confinement"]}
               />
