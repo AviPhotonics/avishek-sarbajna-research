@@ -27,7 +27,7 @@ const CVSection = () => {
               <ul className="space-y-4">
                 
                 <li>
-                  <div className="text-sm text-gray-500">Since 03/2022</div>
+                  <div className="text-sm text-gray-500">2022 - 2025</div>
                   <div className="font-medium">Doctorate in Physics</div>
                   <div className="text-sm">Danmarks Tekniske Universitet, Denmark</div>
                 </li>
@@ -55,9 +55,15 @@ const CVSection = () => {
       <h3 className="text-xl font-semibold">Research Experience</h3>
     </div>
     <ul className="space-y-4">
-
+      
       <li>
-        <div className="text-sm text-gray-500">Mar 2022 – Present</div>
+        <div className="text-sm text-gray-500">Since Apr 2025</div>
+        <div className="font-medium">Postdoc</div>
+        <div className="text-sm">Quantum and laser photonics, Technical University of Denmark</div>
+      </li>
+      
+      <li>
+        <div className="text-sm text-gray-500">Mar 2022 – Feb 2025</div>
         <div className="font-medium">PhD Researcher</div>
         <div className="text-sm">Applied Nano-Optics Group, Technical University of Denmark</div>
       </li>
