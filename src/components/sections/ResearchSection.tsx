@@ -50,7 +50,7 @@ const ResearchSection = () => {
                 role="Lead Researcher"
                 collaborators={["Prof. Søren Raza", "Dr. Daniel R. Danielsen"]}
                 funding="Laser Photonics Reviews publication"
-                image="/0090 top DF.png"
+                image="/0090 top DF.jpg"
                 links={[]}
                 tags={["Nanostructures", "Lossy Materials", "Field Confinement"]}
               />
