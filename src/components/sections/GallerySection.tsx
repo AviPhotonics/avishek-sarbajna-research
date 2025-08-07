@@ -36,8 +36,16 @@ const GallerySection = () => {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
-  const openLightbox = (img: GalleryImage) => { setSelectedImage(img); setLightboxOpen(true); };
-  const closeLightbox = () => setLightboxOpen(false);
+  const openLightbox = (img: GalleryImage) => { 
+    console.log('🖼️ Opening lightbox for image:', img);
+    setSelectedImage(img); 
+    setLightboxOpen(true); 
+    console.log('🖼️ Lightbox state set - open:', true, 'selected:', img.src);
+  };
+  const closeLightbox = () => {
+    console.log('❌ Closing lightbox');
+    setLightboxOpen(false);
+  };
   const navigateLightbox = (dir: "next" | "prev") => {
     if (!selectedImage) return;
     const idx = galleryImages.findIndex((i) => i.id === selectedImage.id);
@@ -99,7 +107,13 @@ const GallerySection = () => {
             {selectedImage && (
               <div className="relative bg-black rounded-lg overflow-hidden">
                 <button onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-gray-300"><X size={24} /></button>
-                <img src={selectedImage.src} alt={selectedImage.alt} className="w-full h-auto object-contain" />
+                <img 
+                  src={selectedImage.src} 
+                  alt={selectedImage.alt} 
+                  className="w-full h-auto object-contain" 
+                  onLoad={() => console.log('🖼️ Lightbox image loaded successfully:', selectedImage.src)}
+                  onError={(e) => console.error('❌ Lightbox image failed to load:', selectedImage.src, e)}
+                />
                 <button onClick={() => navigateLightbox("prev")} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"><ChevronLeft size={24} /></button>
                 <button onClick={() => navigateLightbox("next")} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"><ChevronRight size={24} /></button>
                 <div className="bg-black/80 text-white p-4 text-sm">{selectedImage.caption}</div>
