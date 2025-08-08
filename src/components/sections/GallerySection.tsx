@@ -102,21 +102,47 @@ const GallerySection = () => {
           </TabsContent>
         </Tabs>
 
-        <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-          <DialogContent className="max-w-4xl p-0 bg-transparent border-none shadow-none">
+        <Dialog open={lightboxOpen} onOpenChange={(open) => {
+          console.log('🔄 Dialog onOpenChange triggered:', open);
+          if (!open) {
+            closeLightbox();
+          }
+        }}>
+          <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-black border-none shadow-none">
             {selectedImage && (
-              <div className="relative bg-black rounded-lg overflow-hidden">
-                <button onClick={closeLightbox} className="absolute top-4 right-4 text-white hover:text-gray-300"><X size={24} /></button>
+              <div className="relative w-full h-full flex items-center justify-center">
+                <button 
+                  onClick={closeLightbox} 
+                  className="absolute top-4 right-4 z-10 text-white hover:text-gray-300 bg-black/50 p-2 rounded-full"
+                >
+                  <X size={24} />
+                </button>
                 <img 
                   src={selectedImage.src} 
                   alt={selectedImage.alt} 
-                  className="w-full h-auto object-contain" 
+                  className="max-w-full max-h-full object-contain" 
+                  style={{ maxHeight: '80vh' }}
                   onLoad={() => console.log('🖼️ Lightbox image loaded successfully:', selectedImage.src)}
-                  onError={(e) => console.error('❌ Lightbox image failed to load:', selectedImage.src, e)}
+                  onError={(e) => {
+                    console.error('❌ Lightbox image failed to load:', selectedImage.src);
+                    console.error('Error event:', e);
+                  }}
                 />
-                <button onClick={() => navigateLightbox("prev")} className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"><ChevronLeft size={24} /></button>
-                <button onClick={() => navigateLightbox("next")} className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white"><ChevronRight size={24} /></button>
-                <div className="bg-black/80 text-white p-4 text-sm">{selectedImage.caption}</div>
+                <button 
+                  onClick={() => navigateLightbox("prev")} 
+                  className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 z-10"
+                >
+                  <ChevronLeft size={24} />
+                </button>
+                <button 
+                  onClick={() => navigateLightbox("next")} 
+                  className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black/50 p-2 rounded-full text-white hover:bg-black/70 z-10"
+                >
+                  <ChevronRight size={24} />
+                </button>
+                <div className="absolute bottom-0 left-0 right-0 bg-black/80 text-white p-4 text-sm">
+                  {selectedImage.caption}
+                </div>
               </div>
             )}
           </DialogContent>
