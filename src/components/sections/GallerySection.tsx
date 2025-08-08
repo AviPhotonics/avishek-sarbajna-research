@@ -37,14 +37,27 @@ const GallerySection = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const openLightbox = (img: GalleryImage) => { 
-    console.log('🖼️ Opening lightbox for image:', img);
+    console.log('🖼️ CLICK EVENT - Opening lightbox for image:', img);
+    console.log('🖼️ CLICK EVENT - Image source:', img.src);
+    console.log('🖼️ CLICK EVENT - Current lightboxOpen state:', lightboxOpen);
+    console.log('🖼️ CLICK EVENT - Current selectedImage:', selectedImage);
+    
     setSelectedImage(img); 
     setLightboxOpen(true); 
-    console.log('🖼️ Lightbox state set - open:', true, 'selected:', img.src);
+    
+    console.log('🖼️ CLICK EVENT - State set - lightboxOpen: true, selectedImage:', img.src);
+    
+    // Debug after state change
+    setTimeout(() => {
+      console.log('🖼️ AFTER STATE - lightboxOpen:', lightboxOpen);
+      console.log('🖼️ AFTER STATE - selectedImage:', selectedImage);
+    }, 100);
   };
+  
   const closeLightbox = () => {
     console.log('❌ Closing lightbox');
     setLightboxOpen(false);
+    setSelectedImage(null);
   };
   const navigateLightbox = (dir: "next" | "prev") => {
     if (!selectedImage) return;
@@ -109,7 +122,13 @@ const GallerySection = () => {
           }
         }}>
           <DialogContent className="max-w-4xl max-h-[90vh] p-0 bg-black border-none shadow-none">
-            {selectedImage && (
+            {(() => {
+              console.log('🖼️ DIALOG RENDER - lightboxOpen:', lightboxOpen);
+              console.log('🖼️ DIALOG RENDER - selectedImage:', selectedImage);
+              console.log('🖼️ DIALOG RENDER - selectedImage exists:', !!selectedImage);
+              return null;
+            })()}
+            {selectedImage ? (
               <div className="relative w-full h-full flex items-center justify-center">
                 <button 
                   onClick={closeLightbox} 
@@ -144,6 +163,8 @@ const GallerySection = () => {
                   {selectedImage.caption}
                 </div>
               </div>
+            ) : (
+              <div className="text-white p-4">No image selected</div>
             )}
           </DialogContent>
         </Dialog>
